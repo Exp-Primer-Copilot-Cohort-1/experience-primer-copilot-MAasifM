@@ -1,14 +1,12 @@
 // Create Web Server
+// npm install express --save
+// npm install body-parser --save
+// npm install mongoose --save
+// npm install cors --save
+// npm install nodemon --save-dev
+// npm install --save multer
+// npm install --save multer-s3
+// npm install --save aws-sdk
 
-// Import Express
-
-const express = require('express');
-const app = express();
-
-// Import Body Parser
-
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-// Import Cors
+app = express();
+app.use(cors());
